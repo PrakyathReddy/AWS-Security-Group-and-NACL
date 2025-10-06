@@ -24,5 +24,18 @@ Step 2: choose "VPC and more". AWS will now setup both public and private subnet
 
 ![VPC-workflow](VPC-workflow.png)
 
+Step 3: create EC2 in the public subnet of this new VPC 
+Step 4: Edit network settings ->  choose the newly created VPC and a public subnet
 
- 
+Step 5: ssh into ec2 instance. Create a simple python application. Run a simple http server on port 8000
+$ sudo apt update
+$ sudo apt install python3
+$ sudo apt install pip
+$ python3 -m http.server 8000
+
+ubuntu@ip-10-0-0-6:~$ python3 -m http.server 8000
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+
+http://&lt;public-ip-of-ec2&gt;:8000 - will not be available for public access
+
+Step 6: Make sure NACL on 
