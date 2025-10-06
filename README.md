@@ -15,4 +15,7 @@ All inbound traffic is denied by default.
 Network Access Control List (NACL) - applied at subnet level. Can Deny or Allow traffic.
 SG - can only allow traffic, can't deny
 
+Here's a diagram with both the components involved: 
+
+![AWS Security Group and NACL Overview](overview.png)
 
