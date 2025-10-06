@@ -38,4 +38,7 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 
 http://&lt;public-ip-of-ec2&gt;:8000 - will not be available for public access
 
-Step 6: Make sure NACL on 
+Step 6: Make sure NACL accept all incoming traffic. By default SGs deny all traffic. Add an inbound rule to accept traffic from anywhere on port 8000.
+
+![sg-inbound](sg-inbound.png)
+
