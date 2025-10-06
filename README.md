@@ -42,3 +42,17 @@ Step 6: Make sure NACL accept all incoming traffic. By default SGs deny all traf
 
 ![sg-inbound](sg-inbound.png)
 
+ec2 instance now accessible from any device on the internet.
+
+As a policy, suppose you're not supposed to allow traffic at all on port 8000, you can enforce the same using a NACL.
+
+- Navigate to Network ACLs
+- Edit inbound rules
+- Instead of allowing all traffic, remove the row and add new rule
+- Rule should deny all requests that try to reach port 8000 
+
+![nacl-inbound-rules](nacl-inbound-rules.png)
+
+The ec2 is now unaccessible from the internet despite SG's allowing traffic because of NACL's.
+
+Traffic on port 8000 will now be denied for all resources within the subnet.
