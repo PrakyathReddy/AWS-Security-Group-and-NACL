@@ -19,3 +19,10 @@ Here's a diagram with both the components involved:
 
 ![AWS Security Group and NACL Overview](overview.png)
 
+Step 1: Navigate to VPC and create one
+Step 2: choose "VPC and more". AWS will now setup both public and private subnets in 2 AZs. AWS will also create route tables along with an internet gateway and some VPC endpoints for S3 buckets. 
+
+![VPC-workflow](VPC-workflow.png)
+
+
+ 
