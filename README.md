@@ -56,3 +56,9 @@ As a policy, suppose you're not supposed to allow traffic at all on port 8000, y
 The ec2 is now unaccessible from the internet despite SG's allowing traffic because of NACL's.
 
 Traffic on port 8000 will now be denied for all resources within the subnet.
+
+Similarly, we can use NACLs to enfore more compliance requirements:
+- Restrict Traffic by IP Range
+- Limit Unused Ports
+- Egress Filtering
+- enable auditing and monitoring, etc.
