@@ -62,3 +62,5 @@ Similarly, we can use NACLs to enfore more compliance requirements:
 - Limit Unused Ports
 - Egress Filtering
 - enable auditing and monitoring, etc.
+
+Deleted all AWS resources
